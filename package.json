@@ -1,0 +1,36 @@
+{
+  "name": "batterysmart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "npx sequelize-cli db:seed:all",
+    "seed-data": "npx sequelize-cli seed:generate --name booking",
+    "migrate": "npx sequelize-cli db:migrate",
+    "down": "npx sequelize-cli db:migrate:undo",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongodb": "^3.6.10",
+    "mongoose": "^5.13.2",
+    "nodemon": "^2.0.20",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.3",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
+  }
+}
