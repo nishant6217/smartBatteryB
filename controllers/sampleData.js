@@ -47,15 +47,15 @@ module.exports.getSampleData = async (req, res) => {
     try {
         return await SampleData.findAll({ where: { createdby: req.user } }).then(function (users) {
             if (users) {
-                logger.info(`insert successful`)
+                logger.info(`Successfully fetched sample data`)
                 res.status(200).json({
                     message: "Successfully fetched sample data",
                     success: "ok",
                     data: users
                 });
             } else {
-                logger.info(`Error in insert new record`)
-                res.status(400).send('Error in insert new record');
+                logger.info(`Error in fetching data`)
+                res.status(400).send('Error in fetching data');
             }
         });
     } catch (error) {

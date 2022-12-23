@@ -15,7 +15,7 @@ module.exports.generateToken = async function (userEmail) {
 };
 module.exports.authenticate = async function (req, res, next) {
     try {
-        const token = req.headers.token || "";
+        const token = req.body.token || "";
         const data = JWT.verify(token, JWT_PRIVATE_KEY);
 
         const user = await Users.findOne({
