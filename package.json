@@ -9,7 +9,8 @@
     "migrate": "npx sequelize-cli db:migrate",
     "down": "npx sequelize-cli db:migrate:undo",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "netlify-lambda serve source/lambda",
+    "build": "netlify-lambda build source/lambda"
   },
   "author": "",
   "license": "ISC",
