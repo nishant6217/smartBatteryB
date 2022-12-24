@@ -1,0 +1,11 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Credflow!11",
+    "database": "bhinitial",
+    "host": "bh-instance-01.cbvyusbuqyjt.ap-south-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
+
+
